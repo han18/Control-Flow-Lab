@@ -11,21 +11,32 @@ const sqareSpace = 0.8
 const plantSpace = Math.round(area / sqareSpace) ;
 console.log(plantSpace);
 
-const plantSqare = plants / sqareSpace
+const plantSqare = Math.round(area / plants) 
 console.log(plantSqare)
 
 
-
+// the precentage of growth
 const eightPer = 0.80
-const fiftyPer = 0.50
+const fiftyPer = 0.50 
 
 // week one
-if(plantSpace > eightPer + plants ) {
+if(plantSqare > eightPer * plants ) {
     console.log("Pruned")
-} else if (plantSpace > fivePer && plantSpace < eightPer ) {
+} else if (plantSqare > fiftyPer && plantSqare < eightPer ) {
     console.log("Monitored")
-} else if (plantSpace < fivePer) {
+} else if (plantSqare < fiftyPer) {
     console.log("Planted")
 } else {
     console.log("Do not plant in the area!")
 }
+
+// // week one
+// if(plantSpace > eightPer  * plants ) {
+//     console.log("Pruned")
+// } else if (plantSpace > fiftyPer && plantSpace < eightPer ) {
+//     console.log("Monitored")
+// } else if (plantSpace < fiftyPer) {
+//     console.log("Planted")
+// } else {
+//     console.log("Do not plant in the area!")
+// }
