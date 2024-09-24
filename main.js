@@ -44,6 +44,8 @@ const plantDouble = plantSqare * 2;
 //     console.log("Do not plant in the area!")
 // }
 
+
+// week two
 let weeks = plants * 2;
 
 if(weeks < eightPer ) {
@@ -57,4 +59,21 @@ if(weeks < eightPer ) {
 }
 
 // Part 2: Thinking Bigger
+
+const afterWeeks = 100 * 2** 10;
+
+const requiredArea = afterWeeks * sqareSpace;
+const maxArea = requiredArea * sqareSpace ;
+
+console.log(afterWeeks);
+console.log(requiredArea)
+console.log(maxArea)
+
+if (maxArea > area ) {
+    console.log('This are will exceed capacity')
+}
+
+
+
+
 
