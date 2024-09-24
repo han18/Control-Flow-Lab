@@ -17,8 +17,8 @@ console.log(plantSqare)
 
 
 // the precentage of growth
-const eightPer = 0.80 * plantSpace;
-const fiftyPer = 0.50  * plantSpace;
+const eightPer = 0.80 * area;
+const fiftyPer = 0.50  * area;
 
 // week one
 if(plantSqare > eightPer ) {
@@ -33,17 +33,28 @@ if(plantSqare > eightPer ) {
 
 const plantDouble = plantSqare * 2;
 
-// week one
-if(plantDouble > eightPer ) {
+// week two
+// if(plantSpace > eightPer  ) {
+//     console.log("Pruned")
+// } else if (plantSpace > fiftyPer && plantSpace < eightPer ) {
+//     console.log("Monitored")
+// } else if (plantSpace < fiftyPer) {
+//     console.log("Planted")
+// } else {
+//     console.log("Do not plant in the area!")
+// }
+
+let weeks = plants * 2;
+
+if(weeks < eightPer ) {
     console.log("Pruned")
-} else if (plantDouble > fiftyPer && plantDouble < eightPer ) {
+} else if (weeks < eightPer && weeks > fiftyPer  ) {
     console.log("Monitored")
-} else if (plantDouble < fiftyPer) {
+} else if (plantSpace < fiftyPer) {
     console.log("Planted")
 } else {
     console.log("Do not plant in the area!")
 }
-
 
 // Part 2: Thinking Bigger
 
